@@ -2,17 +2,17 @@
   --blur-bg: rgba(243, 243, 243, 0.945);
   --back: #ffffffff;
   --font: #1f1f1f;
-  /* --h: #4c98ee; */
+  --h: #4c98ee;
   --border: rgba(0, 0, 0, 0.1);
-} 
+}
 
 :root {
   --blur-bg: #1e1e1f;
-  --back:  rgb(23, 23, 24);
+  --back:  rgb(26, 23, 23);
   --font: #ffffffd2;
-  /* --h: #79b1f1; */
+  --h: #79b1f1;
   --border: rgba(145, 142, 142, 0.4);
-} 
+}
 
 html, body {
   min-height: 100vh;
@@ -24,7 +24,7 @@ html, body {
   color: var(--font);
 }
 
-main {
+.container {
   flex: 1 0 auto;
 }
 
@@ -44,16 +44,15 @@ main {
   box-shadow: 0 4px 6px var(--card-shadow);
 }
 
-
-  .navbar {
+.navbar {
     background-color: var(--blur-bg);
     backdrop-filter: blur(10px);
     border-bottom: 1px solid var(--border);
     top: 0;
     width: 100%;
     z-index: 1000;
-  }
-    .nav-link { 
+}
+    .nav-link {
       color: var(--font);
       font-weight: 500;
     }
@@ -86,9 +85,8 @@ main {
     text-decoration: underline;
   }
 
-
 /* h1, h2, h3, h4, h5, h6 {
-  color: var(--h); 
+  color: var(--h);
 } */
 
 footer {
@@ -103,13 +101,104 @@ footer {
   margin-top: auto;
 }
 
-/* ------------------------------------------------------------ 
-Text below is old CSS that was used before adopting Bootstrap 
+.rowphotos {
+  display: flex;
+  flex-wrap: wrap;
+  min-height: 100vh;
+}
+.colphotos {
+    box-sizing: border-box;
+    /* padding: 8px; */
+  }
+  .col-5 {
+    flex: 0 0 33.3333%;
+    max-width: 33.3333%;
+    overflow-y: auto;
+  }
+  .col-8 {
+    flex: 0 0 66.6667%;
+    /* max-width: 66.6667%; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 400px;
+  }
+  #rightFrame {
+    width: 100%;
+    height: 100%;
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    min-height: 400px; 
+  }
+  #rightFrame img {
+    max-width: 100%;
+    max-height: 70vh;
+    width: auto;
+    height: auto;
+    display: block;
+    margin: auto;
+    border-radius: 8px; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+  }
+    .col-5 a {
+      display: inline-block;
+      margin: 6px;
+      border-radius: 4px;
+      overflow: hidden;
+      /* border: 1px solid #dee2e6; */
+      transition: box-shadow 0.2s;
+    }
+    .col-5 a:hover {
+      box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+      border-color: #0d6efd;
+    }
+    .col-5 img {
+      display: block;
+      width: 100px;
+      height: 75px;
+      object-fit: cover;
+    }
+
+    @media (max-width: 900px) {
+      .col-5, .col-8 {
+        flex: 0 0 100%;
+        max-width: 100%;
+      }
+      .col-5 {
+        order: 2;
+        min-height: auto;
+      }
+      .col-8 {
+        order: 1;
+        min-height: 250px;
+      }
+      #rightFrame {
+        min-height: 250px;
+      }
+      /* #rightFrame img {
+        max-height: 40vh;
+      } */
+    }
+
+    @media (max-width: 600px) {
+      .col-5 img {
+        width: 70px;
+        height: 52px;
+      }
+      /* #rightFrame img {
+        max-height: 30vh;
+      } */
+      /* .col-5 {
+        padding: 4px;
+      } */
+/* ------------------------------------------------------------
+Text below is old CSS that was used before adopting Bootstrap
 -------------------------------------------------------------*/
-/* Hover effect styling for interactivity 
-    */ 
+/* Hover effect styling for interactivity
+    */
 /* .card:hover {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
   transition: all 0.3s ease;
 } */
@@ -122,7 +211,7 @@ Text below is old CSS that was used before adopting Bootstrap
 }
 
 .sidenav a{
-  color: var(--invertfont); 
+  color: var(--invertfont);
   text-decoration: none;
   transition: 0.3s;
   padding: 0px 10px;
@@ -130,7 +219,7 @@ Text below is old CSS that was used before adopting Bootstrap
 
 .sidenav a:hover{
   color: var(--invertfont);
-  background-color: var(--a); 
+  background-color: var(--a);
 }
 
 .tablinks{
@@ -142,7 +231,7 @@ Text below is old CSS that was used before adopting Bootstrap
 }
 
 .tab a {
-  color: var(--a); 
+  color: var(--a);
   text-decoration: none;
   transition: 0.3s;
   padding: 0px 10px;
@@ -150,7 +239,7 @@ Text below is old CSS that was used before adopting Bootstrap
 
 .tab a:hover{
   background-color: var(--a);
-  color: var(--invertfont); 
+  color: var(--invertfont);
   transition: 0.3s;
   padding: 0px 10px;
 }
@@ -162,7 +251,7 @@ Text below is old CSS that was used before adopting Bootstrap
   margin-right: 2%;
 }
 
-  /* Style inputs 
+  /* Style inputs
   input[type=text], select, textarea {
     width: 100%;
     padding: 7px;
@@ -170,7 +259,7 @@ Text below is old CSS that was used before adopting Bootstrap
     margin-bottom: 16px;
     resize: vertical;
   }
-  
+
   input[type=submit] {
     background-color: var(--font);
     color: white;
@@ -178,7 +267,7 @@ Text below is old CSS that was used before adopting Bootstrap
     border: none;
     cursor: pointer;
   }
-  
+
   input[type=submit]:hover {
     background-color: var(--a);
   }
@@ -190,7 +279,7 @@ Text below is old CSS that was used before adopting Bootstrap
   color: var(--a);
 }
 
-/* Style the nav links 
+/* Style the nav links
 .bottomnav a {
   float: left;
   display: block;
@@ -205,13 +294,13 @@ Text below is old CSS that was used before adopting Bootstrap
 }
 
 .bottomnav img {
-  width: 20px; 
-  height: 20px; 
+  width: 20px;
+  height: 20px;
   float:left;
 }
 
 footer {
   bottom: 0;
   position: fixed;
-} 
+}
 */

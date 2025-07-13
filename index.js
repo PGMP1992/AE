@@ -63,8 +63,29 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+function showInRightFrame(event, imgSrc) {
+      event.preventDefault();
+      document.getElementById('rightFrame').innerHTML =
+        '<img src="' + imgSrc + '" style="max-width:100%;max-height:100%;width:auto;height:auto;display:block;margin:auto;">';
+    }
 
 
-
+function loadInArticle(event, url) {
+      event.preventDefault();
+      const article = document.getElementById('article');
+      // If it's an image, show it as an <img>
+      if (url.match(/\.(jpg|jpeg|png|gif)$/i)) {
+        article.innerHTML = '<img src="' + url + '" style="max-width:100%;max-height:70vh;display:block;margin:auto;">';
+      } else {
+        fetch(url)
+          .then(response => response.text())
+          .then(html => {
+            article.innerHTML = html;
+          })
+          .catch(() => {
+            article.innerHTML = "<p>Could not load page.</p>";
+          });
+      }
+    }
 
 

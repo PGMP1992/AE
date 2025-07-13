@@ -17,7 +17,7 @@
 <body>
   <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3">
     <div class="container-fluid">
-        <button class="navbar-toggler bg-dark m-1 ms-auto" type="button"
+        <button class="navbar-toggler bg-white m-1 ms-auto" type="button"
                 data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span> 
         </button>
@@ -27,11 +27,31 @@
               <li class="nav-item"><a class="nav-link" onclick = "load_page('about.html','content')">About</a></li>
               <li class="nav-item"><a class="nav-link" onclick = "load_page('mp3s.html','content')">MP3</a></li>
               <li class="nav-item"><a class="nav-link" onclick = "load_page('fotos.html','content')">Fotos</a></li>
-              <li class="nav-item"><a class="nav-link" onclick = "load_page('media.html','content')">Media</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('midia.html','content')">Media</a></li>
               <li class="nav-item"><a class="nav-link" onclick = "load_page('links.html','content')">Links</a></li>
           </ul>
+          
+          <div> 
+            <select name="menu1">
+                <option value="AEText.html">Selecione uma musica</option>
+                <option value="music/pages/AsRosas.html"onclick="load_page('music/pages/AsRosas.html', 'content')">As Rosas</option>
+                <option value="music/BeijemeCallboy.html">Beije-me Callboy</option>
+                <option value="music/Boro.html">Boro</option>
+                <option value="music/celebracoes.html">Celebracoes</option>
+                <option value="music/Entreavesderapina.html">Entre aves de rapina</option>
+                <option value="music/Inocencia.html">Inocencia</option>
+                <option value="music/instrumental.html">Instrumental I</option>
+                <option value="music/joy.html">Joy</option>
+                <option value="music/monstrenga.html">Monstrenga</option>
+                <option value="music/nanoite.html">Na Noite</option>
+                <option value="music/NoFim.html">No Fim</option>
+                <option value="music/vencidos.html">Vencidos</option>
+                <option value="music/YouToo.html">You Too</option>
+            </select>
+          </div>
+
           <div class="theme-toggle">
-            <i class="bi bi-sun-fill" id="theme-icon"></i>
+            <i class="bi bi-moon-fill" id="theme-icon"></i>
           </div>
         </div>
     </div>
