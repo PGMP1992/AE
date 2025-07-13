@@ -27,6 +27,7 @@ document.addEventListener("DOMContentLoaded", function() {
   load_page("home.html", "content");
 });
 
+
 /* Work.htm  
 onclick shows selected tab */ 
 function openTab(evt, tabName) {

@@ -25,28 +25,28 @@
           <ul class="navbar-nav me-auto">
               <li class="nav-item"><a class="nav-link" onclick = "load_page('home.html','content')">Home</a></li>
               <li class="nav-item"><a class="nav-link" onclick = "load_page('about.html','content')">About</a></li>
-              <li class="nav-item"><a class="nav-link" onclick = "load_page('mp3s.html','content')">MP3</a></li>
-              <li class="nav-item"><a class="nav-link" onclick = "load_page('fotos.html','content')">Fotos</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('mp3s.html','content')">MP3s</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('fotos.html','content')">Photos</a></li>
               <li class="nav-item"><a class="nav-link" onclick = "load_page('midia.html','content')">Media</a></li>
               <li class="nav-item"><a class="nav-link" onclick = "load_page('links.html','content')">Links</a></li>
           </ul>
           
           <div> 
-            <select name="menu1">
+            <select name="menu1" onchange="if(this.value) load_page(this.value, 'content')">
                 <option value="AEText.html">Selecione uma musica</option>
-                <option value="music/pages/AsRosas.html"onclick="load_page('music/pages/AsRosas.html', 'content')">As Rosas</option>
-                <option value="music/BeijemeCallboy.html">Beije-me Callboy</option>
-                <option value="music/Boro.html">Boro</option>
-                <option value="music/celebracoes.html">Celebracoes</option>
-                <option value="music/Entreavesderapina.html">Entre aves de rapina</option>
-                <option value="music/Inocencia.html">Inocencia</option>
-                <option value="music/instrumental.html">Instrumental I</option>
-                <option value="music/joy.html">Joy</option>
-                <option value="music/monstrenga.html">Monstrenga</option>
-                <option value="music/nanoite.html">Na Noite</option>
-                <option value="music/NoFim.html">No Fim</option>
-                <option value="music/vencidos.html">Vencidos</option>
-                <option value="music/YouToo.html">You Too</option>
+                <option value="music/pages/AsRosas.html">As Rosas</option>
+                <option value="music/pages/BeijemeCallboy.html">Beije-me Callboy</option>
+                <option value="music/pages/Boro.html">Boro</option>
+                <option value="music/pages/celebracoes.html">Celebracoes</option>
+                <option value="music/pages/Entreavesderapina.html">Entre aves de rapina</option>
+                <option value="music/pages/Inocencia.html">Inocencia</option>
+                <option value="music/pages/instrumental.html">Instrumental I</option>
+                <option value="music/pages/joy.html">Joy</option>
+                <option value="music/pages/monstrenga.html">Monstrenga</option>
+                <option value="music/pages/nanoite.html">Na Noite</option>
+                <option value="music/pages/NoFim.html">No Fim</option>
+                <option value="music/pages/vencidos.html">Vencidos</option>
+                <option value="music/pages/YouToo.html">You Too</option>
             </select>
           </div>
 
