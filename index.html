@@ -1,23 +1,49 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!DOCTYPE html>
 <html>
-<head>
-<title>Arte no Escuro</title>
-<meta http-equiv="Content-Type" 
-	content="text/html; charset=iso-8859-1">
-<meta name="description" 
-	content="Oficial site Arte no Escuro">
-<meta name="keywords"
-	content="Arte no Escuro, Rock Brasilia, Rock BSB, Punk, Gothic, Dark, Rock Brasil, Rock Brazil, Rock 1980, Bandas de Brasilia, Bandas de BSB, Noise Music, Beije-me Cowboy, Marielle Loyola, Pedro Hiena, Paulo Coelho, Adriano Ribeiro">
-</head>
-<frameset rows="85,*,43" border="0" framespacing="0" cols="*" frameborder="NO"> 
-  <frame name="topFrame" scrolling="NO" noresize src="AETop.html">
-  <frame name="mainFrame" src="AEFirst.html" marginwidth="10" marginheight="10">
-  <frame name="bottomFrame" scrolling="NO" noresize src="AEbottom.html">
-</frameset>
-<noframes> 
-<body bgcolor="#FFFFFF" text="#000000">
-We're sorry but this site has frame based content that your browser apparently 
-doesn't support. AEFrame 
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <head>
+    <title>Arte no Escuro</title>
+    <link rel="stylesheet" href="bootstrap.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" 
+        integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">      
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" 
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+    </script>
+    <script src="index.js"></script> 
+  </head>
+
+<body>
+  <nav class="navbar navbar-expand-sm navbar-toggleable-sm box-shadow mb-3">
+    <div class="container-fluid">
+        <button class="navbar-toggler bg-dark m-1 ms-auto" type="button"
+                data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span> 
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">              
+          <ul class="navbar-nav me-auto">
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('home.html','content')">Home</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('about.html','content')">About</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('mp3s.html','content')">MP3</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('fotos.html','content')">Fotos</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('media.html','content')">Media</a></li>
+              <li class="nav-item"><a class="nav-link" onclick = "load_page('links.html','content')">Links</a></li>
+          </ul>
+          <div class="theme-toggle">
+            <i class="bi bi-sun-fill" id="theme-icon"></i>
+          </div>
+        </div>
+    </div>
+  </nav>
+  
+  <div class="container mb-3" id="content">
+    <!-- Content will be loaded here -->
+  </div>
+
+  <footer>
+    &copy;Arte no Escuro 2025
+  </footer>
+
 </body>
-</noframes> 
 </html>
