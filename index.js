@@ -89,4 +89,8 @@ function loadInArticle(event, url) {
       }
     }
 
+    function playMp3(src) {
+        document.getElementById('mp3-player').innerHTML =
+          '<audio controls autoplay style="width:90%;max-width:400px;"><source src="' + src + '" type="audio/mpeg">Seu navegador não suporta áudio.</audio>';
+      }
 
