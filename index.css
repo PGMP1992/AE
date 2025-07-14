@@ -1,7 +1,8 @@
 :root .white-theme {
   --blur-bg: rgba(243, 243, 243, 0.945);
   --back: #ffffffff;
-  --font: #1f1f1f;
+  --font: #323338;
+  --font2:#5f606bd2;
   --h: #4c98ee;
   --border: rgba(0, 0, 0, 0.1);
 }
@@ -9,7 +10,8 @@
 :root {
   --blur-bg: #1e1e1f;
   --back:  rgb(0, 0, 0);
-  --font: #ffffffd2;
+  --font: #dfe0ebd2;
+  --font2: #88899bd2;
   --h: #79b1f1;
   --border: rgba(145, 142, 142, 0.4);
 }
@@ -185,6 +187,11 @@ footer {
       .col-5 img {
         width: 70px;
         height: 52px;
+      }
+    }
+
+      .credits {
+        color : var(--font2);
       }
       /* #rightFrame img {
         max-height: 30vh;
