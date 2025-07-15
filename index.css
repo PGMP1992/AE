@@ -178,9 +178,9 @@ footer {
       #rightFrame {
         min-height: 250px;
       }
-      /* #rightFrame img {
+      #rightFrame img {
         max-height: 40vh;
-      } */
+      }
     }
 
     @media (max-width: 600px) {
@@ -193,9 +193,9 @@ footer {
       .credits {
         color : var(--font2);
       }
-      /* #rightFrame img {
+      #rightFrame img {
         max-height: 30vh;
-      } */
+      }
       /* .col-5 {
         padding: 4px;
       } */
