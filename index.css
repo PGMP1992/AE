@@ -196,6 +196,18 @@ footer {
       #rightFrame img {
         max-height: 30vh;
       }
+
+    .carousel-control-prev-icon,
+    .carousel-control-next-icon {
+    background-color: rgb(245, 15, 15);
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    background-size: 50%;
+    background-position: center;
+    background-repeat: no-repeat;
+    visibility: visible;
+}
       /* .col-5 {
         padding: 4px;
       } */
