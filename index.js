@@ -2,11 +2,10 @@
 Navigation bar*/
 function openNav() {
     document.getElementById("mySidenav").style.width = "max-width";
-
 }
 
-  /* index.html 
-  Navigation bar*/  
+/* index.html 
+   Navigation bar*/  
 function closeNav() {
     document.getElementById("mySidenav").style.width = "max-width";
   }
@@ -29,7 +28,6 @@ document.addEventListener("DOMContentLoaded", function() {
   load_page("home.html", "content");
 });
 
-
 /* Work.htm  
 onclick shows selected tab */ 
 function openTab(evt, tabName) {
@@ -42,7 +40,6 @@ function openTab(evt, tabName) {
   // Work.htm  
   //Get the element with id="defaultOpen" above and click on it */ 
 function clickTab() {    
-    
     document.getElementById("defaultOpen").click();
     tabcontent = document.getElementsByClassName("tabcontent");
 
@@ -66,6 +63,8 @@ document.addEventListener('DOMContentLoaded', function() {
   });
 });
 
+
+// Carousel --------------------------------
 let photoCarouselItems = [];
 let currentPhotoIndex = 0;
 
@@ -166,7 +165,8 @@ function loadInArticle(event, url) {
           });
       }
     }
-
+    
+    // MP3 player
     function playMp3(src) {
         document.getElementById('mp3-player').innerHTML =
           '<audio controls autoplay style="width:90%;max-width:400px;"><source src="' + src + '" type="audio/mpeg">Seu navegador não suporta áudio.</audio>';
